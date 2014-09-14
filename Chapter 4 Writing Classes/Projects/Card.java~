@@ -1,0 +1,36 @@
+public class Card {
+  private int num;
+  public Card (int pnum){
+    num = pnum;
+  
+  if ( num<0 || num>51)
+    System.err.print("error");
+  
+  //0->51  
+  
+  
+}
+public String getValue(){
+  
+  
+                                                   
+  //figure out
+  //Ace ->King
+  //use mod
+  //num%13
+}
+
+
+public String getSuite(){
+  
+  
+//  spade
+//    Diamond
+//    Clubs
+//    Hearts
+//    num/13
+//    use division
+    
+    
+}
+}

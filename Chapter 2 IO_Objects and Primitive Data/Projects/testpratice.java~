@@ -1,0 +1,10 @@
+public class testpratice {
+  
+  public static void main (String args[])
+  {
+int x = (int)(5.0/4);
+    
+  }
+    
+
+}

@@ -1,0 +1,73 @@
+public class TwoDArrayBasicsII{
+  public static final int NUM_ROWS = 10;
+  public static final int NUM_COLS = 10;
+  private int sum= 0;
+  private int[][] ary = new int[NUM_ROWS][NUM_COLS];
+  
+  //Constructor
+  public TwoDArrayBasicsII(){
+      for (int r = 0; r<ary.length;r++){
+        for (int c= 0; c<ary[0].length;c++){
+         ary[r][c]=(int) (Math.random()*10);
+         sum= sum +ary[r][c];
+         }
+      }
+   
+  
+    
+  }
+  
+  //return the sum of the array
+  public int sum(){
+      for (int r = 0; r<ary.length;r++){
+        for (int c= 0; c<ary[0].length;c++){
+         sum = sum + ary[r][c];
+        }
+        
+      }
+    
+    return sum;
+   
+  }
+  
+  //set the given cell to the given value
+  public void set(int r, int c, int value){
+    
+       
+    ary[r][c]=value;
+    
+    
+  }
+  
+  //flood the array from the given cell down and right
+  public void flood(int r, int c, int value){
+    for (int i = r; i <ary.length; i++){
+      for (int p= c; p<ary[r].length; p++){
+        ary[i][p]=value;
+      }
+    }
+        
+    
+    
+  }
+  
+  //returns the sum of the cells around the given cell
+  public int countAround(int r, int c){
+    int a = ary [r-1][c-1];
+    int b = ary[r-1][c];
+    int x = ary [r-1] [c+1];
+    int d= ary [r] [c-1];
+    int e = ary [r] [c+1];
+    int f = ary [r+1][c-1];
+    int g = ary[r+1][c];
+    int h = ary [r+1] [c+1];
+    return a+b+x+d+e+f+g+h;
+  }
+  
+  //returns the array as a String of ints in two dimensions
+  public String toString(){
+      return "sum";
+  }
+}
+  
+  

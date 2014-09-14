@@ -1,0 +1,16 @@
+public class bhalalaChapter3proj4{
+  public static void main (String args[]){
+    
+       EasyReader e = new EasyReader();
+ System.out.println("input side lenght"); 
+    int sides = e.readInt();
+    //for (int r == 0; r<sides; c++){ 
+    
+    
+    
+    
+    
+    
+    
+  }
+}

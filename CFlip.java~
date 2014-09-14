@@ -1,0 +1,43 @@
+//Leon Chen Chapter 4 Project 1
+
+public class CFlip {
+
+    private int heads;
+    private int tails;
+    private int pface;
+    private int face;
+    
+    //default constr
+    public CFlip (){
+       heads = 0;
+       tails = 0;
+       face = 0;
+    }
+
+    
+  //change contents
+  public void getHeadscount(int h){
+    head = h;
+    
+  }
+  //ask for content
+  public int getHeadscount(){
+    return head;
+}
+  //do something from client
+  public double getPerimeter(){
+    return side*4;
+  }
+  
+  public double getArea(){
+    return side*side;
+  }
+  
+  //string
+//  public String toString(){
+//    String w = new String();
+//    w = "Side = " +side + "/n";
+//    w = w+"Area = " + getArea()+ " Perimeter = " + getPerimeter();
+//    return w;
+//    }
+}

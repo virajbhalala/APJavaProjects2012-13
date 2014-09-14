@@ -1,0 +1,33 @@
+public class bhalalaChapter3proj1 {
+  public static void main (String args[]){
+    EasyReader e = new EasyReader();
+    
+   int total;
+   int average;
+    int ctr = 1;
+   
+    System.out.println("give me your numbers or negative number to stop");
+    int sentinal =  e.readInt ();
+    
+    while( sentinal >=0){
+      
+      
+      
+      
+    System.out.println("give me your numbers or negative number to stop");
+    sentinal =  e.readInt (); 
+    ctr++;
+   total = total+sentinal;
+    
+  average = total / ctr;
+    
+    }
+    
+    
+    
+    
+    
+  }
+}
+
+

@@ -1,0 +1,38 @@
+public class bhalalaChapter3proj8 {
+  public static void main (String args[]){
+    EasyReader e = new EasyReader();
+    
+    System.out.println("input a year to find if it is leap or not");
+    int inputyear =  e.readInt ();
+    
+    
+    if (year < 1582 )
+      System.out.println("Error. This year is not in Georgian Calender");
+    
+   else
+      if (year%4==0)
+    {
+      if (year%100!=0)
+        System.out.println("The Year is leap year");
+    }
+    else
+      System.out.println("year is not leap year");
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+}

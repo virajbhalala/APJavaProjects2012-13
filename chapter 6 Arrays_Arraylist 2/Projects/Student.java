@@ -1,0 +1,57 @@
+public class Student implements Comparable{
+ private String name;
+ private int[] scores;
+ private int nextScoreIndex;
+ 
+ 
+ //Force the user of the class to provide a name for the Student
+ public Student(String n){  
+   name = n; 
+   scores = new int[10];
+ }
+ 
+ public void addScore(int nextScore){
+   scores[nextScoreIndex]=nextScore;
+   nextScoreIndex++;
+ }
+  
+ public double getAverage(){
+  return getSum()*1.0/nextScoreIndex;
+ }
+ 
+ public int getSum(){
+   int sum=0;
+   for(int temp:scores)
+     sum+=temp;
+   return sum;
+ }
+ 
+ public String getName(){
+   return name;
+ }
+ 
+ public String toString(){
+  return name + " average is " + getAverage(); 
+ }
+ 
+ //compare students by average, if a tie
+ //use the name
+ public int compareTo(Object o){
+ Student s = (Student) o;
+   int num =0;
+  if  (s.getAverage() < getAverage())
+  return -1;
+  
+   else
+     if  (s.getAverage() > getAverage())
+      return 1;
+   else 
+     
+     return s.getName().compareTo(this.getName());
+    
+   
+   
+   
+ }
+  
+}
